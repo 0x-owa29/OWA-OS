@@ -66,6 +66,94 @@ Even more importantly, OWA OS introduces first-class support for EVM ecosystems,
 
 ---
 
+                                         ┌────────────────────────────┐
+                                         │       Applications         │
+                                         │────────────────────────────│
+                                         │ Desktop │ Browser │ Games  │
+                                         │ Discord │ Telegram │ API   │
+                                         └─────────────┬──────────────┘
+                                                       │
+                                      ┌────────────────▼────────────────┐
+                                      │          OWA Runtime            │
+                                      │─────────────────────────────────│
+                                      │ Scheduler │ Events │ Tool Calls │
+                                      │ Context   │ State  │ Lifecycle  │
+                                      └────────────────┬────────────────┘
+                                                       │
+       ┌───────────────────────────────┬───────────────┼──────────────────────────────┐
+       │                               │               │                              │
+┌──────▼───────┐              ┌────────▼──────┐ ┌──────▼────────┐          ┌─────────▼────────┐
+│    Memory    │              │ Personality   │ │   Planner      │          │      Plugins      │
+├──────────────┤              ├───────────────┤ ├────────────────┤          ├───────────────────┤
+│ Short-Term   │              │ Traits        │ │ Goal Planning  │          │ Discord           │
+│ Long-Term    │              │ Emotions      │ │ Tool Selection │          │ Telegram          │
+│ Embeddings   │              │ Behavior      │ │ Task Queue     │          │ Browser           │
+│ Knowledge    │              │ Prompts       │ │ Reasoning      │          │ Custom            │
+└──────┬───────┘              └───────────────┘ └────────────────┘          └─────────┬─────────┘
+       │                                                                              │
+       └──────────────────────────────┬───────────────────────────────────────────────┘
+                                      │
+                          ┌───────────▼────────────┐
+                          │     AI Providers       │
+                          ├────────────────────────┤
+                          │ OpenAI                │
+                          │ Claude                │
+                          │ Gemini                │
+                          │ DeepSeek              │
+                          │ Ollama                │
+                          │ OpenRouter            │
+                          └───────────┬───────────┘
+                                      │
+                     ┌────────────────▼────────────────┐
+                     │      EVM Infrastructure         │
+                     ├─────────────────────────────────┤
+                     │ Ethereum                        │
+                     │ Robinhood Chain                 │
+                     │ Base                            │
+                     │ Arbitrum                        │
+                     │ Optimism                        │
+                     └─────────────────────────────────┘
+
+OWA-OS/
+│
+├── apps/
+│   ├── desktop
+│   ├── browser
+│   ├── docs
+│   ├── playground
+│   └── examples
+│
+├── packages/
+│   ├── runtime
+│   ├── memory
+│   ├── personality
+│   ├── planner
+│   ├── rag
+│   ├── sdk
+│   ├── plugins
+│   ├── wallet
+│   ├── evm
+│   ├── voice
+│   ├── vision
+│   ├── animation
+│   ├── live2d
+│   └── vrm
+│
+├── crates/
+│
+├── docs/
+│
+├── examples/
+│
+├── scripts/
+│
+├── .github/
+│
+├── package.json
+├── turbo.json
+├── pnpm-workspace.yaml
+└── README.md
+
 > [!TIP]
 >
 > Concerned about browser performance?
@@ -223,3 +311,162 @@ It's an operating system for persistent AI beings.
 Build once.
 
 Live everywhere.
+
+Design Principles
+
+OWA OS is designed around several core principles that guide every component of the system.
+
+Persistent Identity
+
+Characters should remember who they are.
+
+Modular
+
+Every subsystem can be replaced independently.
+
+Local First
+
+Run locally whenever possible.
+
+Cloud Optional
+
+Connect to cloud providers only when needed.
+
+Provider Agnostic
+
+Support every major LLM provider.
+
+EVM Native
+
+Wallets and smart contracts are first-class citizens.
+
+Developer Friendly
+
+Simple APIs with strong TypeScript types.
+
+How OWA OS Works
+User
+ │
+ ▼
+Conversation
+ │
+ ▼
+Runtime
+ │
+ ├── Memory
+ ├── Personality
+ ├── Planner
+ ├── Tools
+ ├── Plugins
+ └── Wallet
+ │
+ ▼
+LLM
+ │
+ ▼
+Response
+ │
+ ▼
+Voice / Avatar / Game / Browser
+Package Overview
+Package	Description
+runtime	Core runtime
+memory	Persistent memory
+personality	Character personality
+planner	Autonomous planning
+wallet	Wallet abstraction
+evm	EVM integration
+sdk	Developer SDK
+plugins	Plugin framework
+voice	Speech pipeline
+vision	Computer vision
+rag	Retrieval Augmented Generation
+Create Your First Character
+import { Character } from "@owa/runtime";
+
+const owa = new Character({
+  name: "Alice",
+  personality: "Cheerful",
+  memory: true,
+  voice: true,
+  vision: true,
+  wallet: true,
+});
+
+await owa.start();
+Plugin Example
+export default definePlugin({
+  name: "discord",
+
+  async onMessage(ctx) {
+    await ctx.reply("Hello from OWA OS!");
+  },
+});
+Memory Pipeline
+Conversation
+      │
+      ▼
+Short-Term Memory
+      │
+      ▼
+Summarizer
+      │
+      ▼
+Embedding
+      │
+      ▼
+Vector Database
+      │
+      ▼
+Long-Term Memory
+Agent Lifecycle
+Boot
+ │
+ ▼
+Load Personality
+ │
+ ▼
+Initialize Memory
+ │
+ ▼
+Connect LLM
+ │
+ ▼
+Load Plugins
+ │
+ ▼
+Ready
+ │
+ ▼
+Interact
+ │
+ ▼
+Learn
+ │
+ ▼
+Save Memory
+Roadmap
+v0.1
+ ├── Runtime
+ ├── Memory
+ ├── Personality
+ └── Browser
+
+v0.2
+ ├── Wallet
+ ├── Plugins
+ ├── SDK
+ └── API
+
+v0.3
+ ├── Live2D
+ ├── VRM
+ ├── Voice
+ └── Vision
+
+v1.0
+ ├── Distributed Runtime
+ ├── Marketplace
+ ├── Multi-Agent
+ ├── Cloud Sync
+ └── AI Operating System
