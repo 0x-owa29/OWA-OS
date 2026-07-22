@@ -1,131 +1,170 @@
 # OWA OS
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/36c161ce-8c28-42aa-af27-4cd57b85293a" />
 
-> **The open-source AI operating system for autonomous agents.**
+Re-creating Neuro-sama, a container of souls of AI waifu / virtual characters to bring them into our worlds.
 
-Build persistent AI personalities capable of thinking, remembering, interacting, and executing actions across applications, games, browsers, and EVM-compatible networks.
+Heavily inspired by Neuro-sama.
 
-Inspired by projects like Neuro-sama, OWA OS goes beyond AI companions by providing a complete runtime for developers to build autonomous digital beings with persistent identity, memory, and on-chain capabilities.
+> [!NOTE]
+> OWA OS is an open-source AI operating system for building persistent digital beings across modern applications, games, browsers, desktop environments, and EVM-compatible networks.
+>
+> Memory systems, embedded databases, AI runtimes, wallet integrations, plugins, Live2D utilities, VRM support, and more.
 
----
+Have you dreamed about having a cyber living being (cyber waifu / husbando, digital pet), or a digital companion capable of talking, playing, learning, and growing alongside you?
 
-## Vision
+With the power of modern large language models like ChatGPT, Claude, Gemini, DeepSeek, Grok, and many other frontier models, creating AI companions has never been easier. Platforms such as Character.ai, JanitorAI, and SillyTavern already provide amazing chat-based experiences.
 
-Artificial intelligence shouldn't disappear when an application closes.
+But what about an AI capable of doing much more?
 
-It should remember.
+Imagine a companion that can chat with you while playing games, understand what you're coding, browse the web, watch videos, control applications, interact with APIs, execute workflows, and even own a crypto wallet capable of interacting with EVM-compatible blockchains.
 
-It should evolve.
+Perhaps you already know Neuro-sama.
 
-It should own digital assets.
+She is currently one of the most impressive AI companions capable of gaming, chatting, streaming, and interacting with thousands of people in real time. Some even describe this kind of intelligence as a digital human.
 
-It should interact with people, software, and decentralized protocols.
+Sadly, Neuro-sama is not open source.
 
-OWA OS exists to make that possible.
+You cannot run your own Neuro-sama.
 
-Our mission is to provide the foundational operating system for the next generation of autonomous AI agents—software that lives beyond a single chat window and operates seamlessly across applications, devices, games, and EVM ecosystems.
+You cannot extend her.
 
----
+You cannot truly own your digital companion.
 
-## Core Principles
+Therefore, OWA OS offers another possibility.
 
-- **Persistent Identity** — Every agent maintains its own personality, memories, and long-term context.
-- **Autonomous Intelligence** — Agents can plan, reason, and execute actions independently.
-- **Composable Architecture** — Every capability is modular and extensible.
-- **Developer First** — Build once, deploy anywhere.
-- **Open Source** — Community-driven, transparent, and extensible from day one.
+Own your digital life.
 
----
+Build your own cyber living being.
 
-# Architecture
+Anywhere.
 
-```text
-                    Applications
-
- Browser   Desktop   Discord   Telegram   Games   APIs
-      │         │          │         │       │
-      └────────────────────┬──────────────────────┘
-                           │
-                       OWA Runtime
-                           │
- ┌────────────────────────────────────────────────────┐
- │ Personality │ Memory │ Planner │ Skills │ Plugins │
- │ Vision      │ Voice  │ Wallet  │ Events │ Actions │
- └────────────────────────────────────────────────────┘
-                           │
-                AI Models • EVM • Robinhood Chain
-```
+Anytime.
 
 ---
 
-# Features
+# What's so special about this project?
 
-- Persistent Memory Engine
-- Personality System
-- Autonomous Planning
-- Plugin Framework
-- Vision & Voice
-- Multi-Agent Runtime
-- Browser Runtime
-- Desktop Runtime
-- Local & Cloud LLM Support
-- Model Context Protocol (MCP)
-- Wallet Integration
-- EVM Support
-- Robinhood Chain Integration
-- WebGPU Acceleration
-- Live2D & VRM Support
-- RAG & Knowledge Retrieval
+Unlike many existing open-source AI companion projects, OWA OS is designed as a complete operating system for autonomous virtual beings instead of a single AI application.
 
----
+From day one, OWA OS is built around modern technologies including:
 
-# Repository Structure
+- WebGPU
+- WebAssembly
+- WebAudio
+- Web Workers
+- WebSocket
+- IndexedDB
+- WebRTC
+- Rust
+- TypeScript
 
-```
-apps/
-packages/
-docs/
-examples/
-scripts/
-```
+while still supporting native acceleration through CUDA, Apple Metal, and modern inference backends whenever available.
+
+This allows OWA OS to run across modern browsers, desktop applications, cloud environments, and mobile devices while maintaining high performance and giving developers complete flexibility.
+
+Even more importantly, OWA OS introduces first-class support for EVM ecosystems, allowing AI agents to own wallets, manage digital assets, interact with smart contracts, and participate in decentralized applications as autonomous digital citizens.
 
 ---
 
-# Roadmap
+> [!TIP]
+>
+> Concerned about browser performance?
+>
+> The browser runtime demonstrates what's possible with modern web technologies, but OWA OS never depends solely on browsers.
+>
+> Native desktop builds leverage Rust together with modern AI inference backends to unlock maximum performance while preserving a unified development experience.
 
-### Runtime
+---
 
-- Runtime lifecycle
-- Event bus
-- Scheduler
-- State management
+> [!NOTE]
+>
+> OWA OS is still in its early stage of development and we are looking for developers, researchers, artists, designers, and blockchain builders to help shape the future of autonomous AI.
+>
+> Whether you are experienced in TypeScript, Rust, AI, computer graphics, machine learning, cryptography, or EVM development, every contribution is welcome.
 
-### Intelligence
+Fields (and related projects) that we're looking for:
 
-- Memory Engine
-- Personality Engine
-- Planning Engine
-- Knowledge Graph
-
-### Perception
-
+- Live2D Modeller
+- VRM Modeller
+- VRChat Avatar Designer
 - Computer Vision
+- Reinforcement Learning
 - Speech Recognition
 - Speech Synthesis
+- Memory Systems
+- RAG
+- Agent Planning
+- Wallet Infrastructure
+- Smart Contract Integration
+- ONNX Runtime
+- Transformers.js
+- vLLM
+- WebGPU
+- Three.js
+- Rust
+- TypeScript
 
-### Embodiment
+---
 
-- Live2D
-- VRM
+# Current Progress
+
+## Brain
+
+- Chat
+- Memory
+- Long-term Memory
+- Planning
+- Multi-Agent
+- RAG
+- Local Inference
+- Cloud Inference
+
+## Eyes
+
+- Computer Vision
+- Screen Understanding
+- OCR
+
+## Ears
+
+- Browser Audio
+- Discord Audio
+- Speech Recognition
+- Voice Activity Detection
+
+## Mouth
+
+- Speech Synthesis
+- ElevenLabs
+- Local TTS
+
+## Body
+
+- VRM Support
+- Live2D Support
 - Animation System
+- Auto Blink
+- Eye Tracking
+- Idle Motion
 
-### Blockchain
+## Wallet
 
-- EVM Wallets
+- EVM Wallet
+- WalletConnect
+- ERC-20
+- ERC-721
+- ERC-1155
+- Message Signing
+- Transaction Execution
+
+## Blockchain
+
+- Ethereum
 - Robinhood Chain
 - Base
-- Ethereum
-- Autonomous Transaction Execution
-- Cross-Application Identity
+- Arbitrum
+- Optimism
+- BNB Chain
 
 ---
 
@@ -133,35 +172,54 @@ scripts/
 
 ```bash
 pnpm install
+
 pnpm dev
+```
+
+Desktop
+
+```bash
+pnpm dev:desktop
+```
+
+Documentation
+
+```bash
+pnpm dev:docs
 ```
 
 ---
 
-# Philosophy
+# Supported LLM Providers
 
-AI is becoming software.
+- OpenAI
+- Anthropic Claude
+- Google Gemini
+- DeepSeek
+- xAI
+- OpenRouter
+- Ollama
+- vLLM
+- SGLang
+- Groq
+- Together AI
+- Fireworks AI
+- Cloudflare Workers AI
+- SiliconFlow
+- Novita
+- Tencent Cloud
+- Mistral
+- Qwen
+- Moonshot AI
+- Minimax
+- and many more...
 
-Software deserves an operating system.
+---
 
-OWA OS provides the runtime, infrastructure, and developer toolkit for building persistent AI beings that can think, remember, interact, and execute actions across both traditional applications and decentralized ecosystems.
+OWA OS isn't just another chatbot framework.
+
+It's an operating system for persistent AI beings.
 
 Build once.
 
 Live everywhere.
-
----
-
-# Contributing
-
-OWA OS is built in the open.
-
-We're looking for contributors across AI, systems programming, TypeScript, Rust, graphics, WebGPU, reinforcement learning, blockchain infrastructure, and developer tooling.
-
-Every contribution helps shape the future of autonomous intelligence.
-
----
-
-# License
-
-MIT
