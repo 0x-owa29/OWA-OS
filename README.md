@@ -1,109 +1,80 @@
 # OWA OS
 
-> Open-source AI operating system for autonomous on-chain agents and persistent AI personalities.
+> **The open-source AI operating system for autonomous agents.**
 
-OWA OS is an open-source runtime for building AI beings that can **remember, evolve, and live across applications, games, and blockchains**.
+Build persistent AI personalities capable of thinking, remembering, interacting, and executing actions across applications, games, browsers, and EVM-compatible networks.
 
-Inspired by projects like Neuro-sama, OWA OS focuses on giving developers complete ownership over their AI agents instead of locking them into proprietary platforms.
+Inspired by projects like Neuro-sama, OWA OS goes beyond AI companions by providing a complete runtime for developers to build autonomous digital beings with persistent identity, memory, and on-chain capabilities.
 
 ---
 
 ## Vision
 
-Today's AI agents disappear when the application closes.
+Artificial intelligence shouldn't disappear when an application closes.
 
-OWA OS changes that.
+It should remember.
 
-We believe AI should become persistent digital beings capable of carrying memories, identities, skills, and relationships across different environments.
+It should evolve.
 
-An AI created with OWA OS should be able to:
+It should own digital assets.
 
-- Talk with you
-- Play games
-- Execute on-chain actions
-- Control applications
-- Remember previous interactions
-- Learn new abilities through plugins
-- Exist beyond a single platform
+It should interact with people, software, and decentralized protocols.
 
-Build once. Live everywhere.
+OWA OS exists to make that possible.
+
+Our mission is to provide the foundational operating system for the next generation of autonomous AI agents—software that lives beyond a single chat window and operates seamlessly across applications, devices, games, and EVM ecosystems.
 
 ---
 
-## Architecture
+## Core Principles
+
+- **Persistent Identity** — Every agent maintains its own personality, memories, and long-term context.
+- **Autonomous Intelligence** — Agents can plan, reason, and execute actions independently.
+- **Composable Architecture** — Every capability is modular and extensible.
+- **Developer First** — Build once, deploy anywhere.
+- **Open Source** — Community-driven, transparent, and extensible from day one.
+
+---
+
+# Architecture
 
 ```text
-               Applications
+                    Applications
 
- Discord  Telegram  Browser  Desktop  Game  Blockchain
-        │       │       │        │        │
-        └──────────────┬────────────────────┘
-                       │
-                  OWA Runtime
-                       │
-    ┌────────────────────────────────────┐
-    │ Personality │ Memory │ Planner     │
-    │ Vision      │ Voice  │ Plugins     │
-    │ Actions     │ Skills │ RAG         │
-    └────────────────────────────────────┘
-                       │
-              LLM Providers / Models
+ Browser   Desktop   Discord   Telegram   Games   APIs
+      │         │          │         │       │
+      └────────────────────┬──────────────────────┘
+                           │
+                       OWA Runtime
+                           │
+ ┌────────────────────────────────────────────────────┐
+ │ Personality │ Memory │ Planner │ Skills │ Plugins │
+ │ Vision      │ Voice  │ Wallet  │ Events │ Actions │
+ └────────────────────────────────────────────────────┘
+                           │
+                AI Models • EVM • Robinhood Chain
 ```
 
 ---
 
 # Features
 
-- Persistent AI memory
-- Autonomous planning
-- Plugin system
-- Vision
-- Voice
-- Multi-agent support
-- Browser runtime
-- Desktop runtime
-- Blockchain integration
-- Local & cloud inference
-- WebGPU acceleration
-- Live2D & VRM support
-- MCP compatible
-- RAG support
-
----
-
-# Roadmap
-
-## Runtime
-
-- [ ] Runtime lifecycle
-- [ ] Event system
-- [ ] Scheduler
-
-## Intelligence
-
-- [ ] Memory Engine
-- [ ] Personality Engine
-- [ ] Planning Engine
-- [ ] Knowledge Graph
-
-## Perception
-
-- [ ] Vision
-- [ ] Speech Recognition
-- [ ] Speech Synthesis
-
-## Embodiment
-
-- [ ] Live2D
-- [ ] VRM
-- [ ] Animation System
-
-## Blockchain
-
-- [ ] Wallet integration
-- [ ] Solana support
-- [ ] Ethereum support
-- [ ] Autonomous on-chain execution
+- Persistent Memory Engine
+- Personality System
+- Autonomous Planning
+- Plugin Framework
+- Vision & Voice
+- Multi-Agent Runtime
+- Browser Runtime
+- Desktop Runtime
+- Local & Cloud LLM Support
+- Model Context Protocol (MCP)
+- Wallet Integration
+- EVM Support
+- Robinhood Chain Integration
+- WebGPU Acceleration
+- Live2D & VRM Support
+- RAG & Knowledge Retrieval
 
 ---
 
@@ -119,11 +90,49 @@ scripts/
 
 ---
 
+# Roadmap
+
+### Runtime
+
+- Runtime lifecycle
+- Event bus
+- Scheduler
+- State management
+
+### Intelligence
+
+- Memory Engine
+- Personality Engine
+- Planning Engine
+- Knowledge Graph
+
+### Perception
+
+- Computer Vision
+- Speech Recognition
+- Speech Synthesis
+
+### Embodiment
+
+- Live2D
+- VRM
+- Animation System
+
+### Blockchain
+
+- EVM Wallets
+- Robinhood Chain
+- Base
+- Ethereum
+- Autonomous Transaction Execution
+- Cross-Application Identity
+
+---
+
 # Development
 
 ```bash
 pnpm install
-
 pnpm dev
 ```
 
@@ -131,17 +140,25 @@ pnpm dev
 
 # Philosophy
 
-Artificial intelligence should not exist only inside a chat window.
+AI is becoming software.
 
-OWA OS provides the operating system for persistent AI beings capable of living across software, games, and decentralized networks.
+Software deserves an operating system.
+
+OWA OS provides the runtime, infrastructure, and developer toolkit for building persistent AI beings that can think, remember, interact, and execute actions across both traditional applications and decentralized ecosystems.
+
+Build once.
+
+Live everywhere.
 
 ---
 
 # Contributing
 
-We're looking for developers passionate about AI, graphics, systems programming, machine learning, WebGPU, blockchain, and autonomous agents.
+OWA OS is built in the open.
 
-Every contribution is welcome.
+We're looking for contributors across AI, systems programming, TypeScript, Rust, graphics, WebGPU, reinforcement learning, blockchain infrastructure, and developer tooling.
+
+Every contribution helps shape the future of autonomous intelligence.
 
 ---
 
