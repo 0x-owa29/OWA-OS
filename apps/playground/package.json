@@ -1,0 +1,20 @@
+{
+  "name": "@owa/playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@owa/runtime": "workspace:*",
+    "@owa/provider-mock": "workspace:*",
+    "@owa/provider-openai": "workspace:*",
+    "@owa/memory-local": "workspace:*",
+    "dotenv": "^17.2.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.1",
+    "typescript": "^5.9.2"
+  }
+}
